@@ -30,7 +30,7 @@ export class PatientmockService extends PatientListService {
 
   getPatientInfo(id: string): Observable<any> {
     return this.http
-      .get('resources/patient.json')
+      .get('assets/patient.json')
       .pipe(map((res: any[]) => res.find(item => item.id === id)));
   }
   getPatientList(): Observable<any> {
